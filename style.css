@@ -32,11 +32,14 @@ body {
 }
 
 .evaluation h2 {
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
   color: var(--white);
 }
 
 .evaluation p {
-  line-height: 2em;
+  line-height: 1.7em;
+  margin-top: 0;
 }
 
 .evaluation p,
@@ -47,7 +50,8 @@ body {
 .numbers {
   display: flex;
   justify-content: space-between;
-  margin: 3em 0;
+  margin: 2em 0;
+  font-weight: bold;
 }
 
 .circle-star {
@@ -62,17 +66,39 @@ body {
   padding: 1em 1.4em;
 }
 
+.circle:hover{
+  background-color: var(--lightGrey);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.circle:active{
+  background-color: var(--orange);
+  color: var(--white);
+}
+
 .evaluation button {
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   color: var(--white);
   background-color: var(--orange);
   border: none;
   width: 100%;
-  padding: 0.9em;
-  border-radius: 1.5em;
+  padding: 1.2em;
+  border-radius: 2em;
   display: block;
   margin: 0 auto;
+  font-weight: bold;
+}
+
+.evaluation button:active {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.evaluation button:hover{
+  cursor: pointer;
 }
 
 .thankyou {
