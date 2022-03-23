@@ -31,18 +31,18 @@ body {
   margin: 2em auto;
 }
 
-.evaluation h2 {
+.heading {
   margin-top: 1.2em;
   margin-bottom: 0.5em;
   color: var(--white);
 }
 
-.evaluation p {
+.paragraph {
   line-height: 1.7em;
   margin-top: 0;
 }
 
-.evaluation p,
+.paragraph,
 .numbers {
   color: var(--lightGrey);
 }
@@ -102,8 +102,27 @@ body {
 }
 
 .thankyou {
+  display:block;
+  text-align: center;
+}
+
+.thankyou img{
+  margin-bottom: 1em;
+}
+
+.rating{
+  background-color: var(--mediumGrey);
+  color: var(--orange);
+  border-radius: 1em;
+  padding: 0.4em 1.3em;
+}
+
+.evaluation{
   display: none;
 }
+
+
+
 
 @media all and (min-width: 500px) {
   .card {
