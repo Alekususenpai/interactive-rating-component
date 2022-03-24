@@ -102,7 +102,7 @@ body {
 }
 
 .thankyou {
-  display:block;
+  display:none;
   text-align: center;
 }
 
@@ -118,7 +118,7 @@ body {
 }
 
 .evaluation{
-  display: none;
+  display: block;
 }
 
 
