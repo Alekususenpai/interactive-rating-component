@@ -64,17 +64,22 @@ body {
   background-color: var(--mediumGrey);
   border-radius: 50%;
   padding: 1em 1.4em;
-}
-
-.circle:hover{
-  background-color: var(--lightGrey);
-  color: var(--white);
   font-weight: bold;
   cursor: pointer;
 }
 
-.circle:active{
+.circle:hover {
+  background-color: var(--lightGrey);
+  color: var(--white);
+}
+
+.circle:active {
   background-color: var(--orange);
+  color: var(--white);
+}
+
+.selected {
+  background-color: var(--lightGrey);
   color: var(--white);
 }
 
@@ -97,32 +102,29 @@ body {
   color: var(--orange);
 }
 
-.evaluation button:hover{
+.evaluation button:hover {
   cursor: pointer;
 }
 
 .thankyou {
-  display:none;
+  display: none;
   text-align: center;
 }
 
-.thankyou img{
+.thankyou img {
   margin-bottom: 1em;
 }
 
-.rating{
+.rating {
   background-color: var(--mediumGrey);
   color: var(--orange);
   border-radius: 1em;
   padding: 0.4em 1.3em;
 }
 
-.evaluation{
+.evaluation {
   display: block;
 }
-
-
-
 
 @media all and (min-width: 500px) {
   .card {
