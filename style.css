@@ -1,3 +1,4 @@
+/* Placing necessary colours in var(iables) for easier and more consistent work. Instead of changing every colour individually, once the colours are assigned to the target elements, everything can be changed painlessly from here!*/
 :root {
   --white: hsl(0, 0%, 100%);
   --lightGrey: hsl(217, 12%, 63%);
@@ -7,6 +8,7 @@
   --orange: hsl(25, 97%, 53%);
 }
 
+/*Important detail to avoid potential headaches. Border's width will be calculated in the total box size instead of overflowing*/
 * {
   box-sizing: border-box;
 }
@@ -16,7 +18,7 @@ body {
   margin: 0;
   height: 100vh;
   font-family: "Overpass", sans-serif;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   background-color: var(--veryDarkBlue);
   display: flex;
   justify-content: center;
@@ -25,14 +27,13 @@ body {
 
 .card {
   background-color: var(--darkBlue);
-  width: 80%;
-  padding: 2em 2.5em;
+  width: 90%;
+  padding: 1.5em;
   border-radius: 1.5em;
   margin: 2em auto;
 }
 
 .heading {
-  margin-top: 1.2em;
   margin-bottom: 0.5em;
   color: var(--white);
 }
@@ -50,7 +51,7 @@ body {
 .numbers {
   display: flex;
   justify-content: space-between;
-  margin: 2em 0;
+  margin: 1.7em 0;
   font-weight: bold;
 }
 
@@ -73,11 +74,13 @@ body {
   color: var(--white);
 }
 
+/*styles when clicked*/
 .circle:active {
   background-color: var(--orange);
   color: var(--white);
 }
 
+/*added class with JS to the selected rating*/
 .selected {
   background-color: var(--lightGrey);
   color: var(--white);
@@ -85,7 +88,7 @@ body {
 
 .evaluation button {
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   color: var(--white);
   background-color: var(--orange);
   border: none;
@@ -120,6 +123,8 @@ body {
   color: var(--orange);
   border-radius: 1em;
   padding: 0.4em 1.3em;
+  display: inline-block;
+  margin-bottom: 0.7em;
 }
 
 .evaluation {
@@ -127,7 +132,11 @@ body {
 }
 
 @media all and (min-width: 500px) {
+  body {
+    font-size: 1.1rem;
+  }
   .card {
-    width: 500px;
+    padding: 2.5em 1.7em;
+    width: 450px;
   }
 }
