@@ -139,6 +139,6 @@ input[type="radio"]{
 @media all and (min-width: 500px) {
   .card {
     padding: 1.9em;
-    width: 401px;
+    width: 400px;
   }
 }
