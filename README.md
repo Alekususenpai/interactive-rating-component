@@ -13,4 +13,4 @@ Users are able to:
 ### Stack
 HTML5, CSS3, Vanilla JS
 
-- Frontend Mentor - [@Alekususenpai](https://www.frontendmentor.io/profile/Alekususenpai)
+--> Frontend Mentor - [@Alekususenpai](https://www.frontendmentor.io/profile/Alekususenpai)
