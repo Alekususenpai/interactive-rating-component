@@ -1,7 +1,7 @@
-# Interactive rating component
+### Interactive rating component
 This is a solution to the Interactive rating component challenge on Frontend Mentor which involves handling user interaction and updating the DOM.
 
-## The challenge
+### The challenge
 
 Users are able to:
 
