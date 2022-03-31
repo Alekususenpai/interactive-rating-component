@@ -24,7 +24,7 @@
                                         <!--Display property is set on block until the user chooses a rating-->
 
                                         <span><img src="./icon-star.svg" alt="star" class="circle-star"></span>
-                                        <h2 class="heading">How did we do?</h2>
+                                        <h1 class="heading">How did we do?</h1>
                                         <!--Same heading and paragraph class for both card divs to make our lives easier-->
                                         <p class="paragraph"> Please let us know how we did with your support
                                                   request. All feedback is appreciated to help us improve our offering!
@@ -32,11 +32,30 @@
                                         <!--Number container for easy and painless layout-ing -->
                                         <div class="numbers">
                                                   <!--Value property is added in each div so we can extract the rating selected by the user-->
-                                                  <div class="circle" value="1">1</div>
-                                                  <div class="circle" value="2">2</div>
-                                                  <div class="circle" value="3">3</div>
-                                                  <div class="circle" value="4">4</div>
-                                                  <div class="circle" value="5">5</div>
+                                                  <div class="circle">
+                                                            <input type="radio" id="1" name="1" value="1">
+                                                            <label for="1">1</label>
+                                                  </div>
+
+                                                  <div class="circle">
+                                                            <input type="radio" id="2" name="2" value="2">
+                                                            <label for="2">2</label>
+                                                  </div>
+
+                                                  <div class="circle">
+                                                            <input type="radio" id="3" name="3" value="3">
+                                                            <label for="3">3</label>
+                                                  </div>
+
+                                                  <div class="circle">
+                                                            <input type="radio" id="4" name="4" value="4">
+                                                            <label for="4">4</label>
+                                                  </div>
+
+                                                  <div class="circle">
+                                                            <input type="radio" id="5" name="5" value="5">
+                                                            <label for="5">5</label>
+                                                  </div>
                                         </div>
                                         <button type="submit" id="btn">Submit</button>
                                         <!--ID is added so we can detect the element on the page and listen for clicks-->
@@ -53,7 +72,7 @@
                                         </div>
 
 
-                                        <h2 class="heading">Thank you!</h2>
+                                        <h1 class="heading">Thank you!</h1>
                                         <p class="paragraph">We appreciate you taking the time
                                                   to give a rating. If you ever need more support, don’t hesitate to get
                                                   in touch!</p>
