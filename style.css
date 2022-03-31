@@ -18,7 +18,6 @@ body {
   margin: 0;
   height: 100vh;
   font-family: "Overpass", sans-serif;
-  font-size: 0.9rem;
   background-color: var(--veryDarkBlue);
   display: flex;
   justify-content: center;
@@ -36,11 +35,13 @@ body {
 .heading {
   margin-bottom: 0.5em;
   color: var(--white);
+  font-size: 1.6rem;
 }
 
 .paragraph {
   line-height: 1.7em;
   margin-top: 0;
+  font-size: 0.9rem;
 }
 
 .paragraph,
@@ -64,7 +65,7 @@ body {
 .circle {
   background-color: var(--mediumGrey);
   border-radius: 50%;
-  padding: 1em 1.4em;
+  padding: 0.8em 1.2em;
   font-weight: bold;
   cursor: pointer;
 }
@@ -93,7 +94,7 @@ body {
   background-color: var(--orange);
   border: none;
   width: 100%;
-  padding: 1.2em;
+  padding: 1em;
   border-radius: 2em;
   display: block;
   margin: 0 auto;
@@ -131,12 +132,13 @@ body {
   display: block;
 }
 
+input[type="radio"]{
+  display: none;
+}
+
 @media all and (min-width: 500px) {
-  body {
-    font-size: 1.1rem;
-  }
   .card {
-    padding: 2.5em 1.7em;
-    width: 450px;
+    padding: 1.9em;
+    width: 400px;
   }
 }
